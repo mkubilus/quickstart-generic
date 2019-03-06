@@ -17,7 +17,7 @@ shared:
 # "main" is a default job that all pipelines have
 jobs:
   first_thing:
-    #requires: [~pr, ~commit]
+    requires: [~pr, ~commit]
     steps:
       - export: export GREETING="Hello, world!"
       - hello: echo $GREETING
