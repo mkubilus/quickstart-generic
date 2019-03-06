@@ -5,12 +5,12 @@
 # container for building in.
 shared:
   image: ubuntu
-  annotations:
-    screwdriver.cd/buildPeriodically: 5 * * * *
 
 # Job definition block
 jobs:
   first_thing:
+    annotations:
+      screwdriver.cd/buildPeriodically: 5 * * * *
     #requires: [~pr, ~commit]
     steps:
       - export: export GREETING="Hello, world!"
