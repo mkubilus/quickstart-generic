@@ -1,5 +1,6 @@
 #!/bin/bash
 
+echo "start"
 echo "I can \"count\""
 echo "1"
 echo "2"
